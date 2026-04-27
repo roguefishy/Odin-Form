@@ -123,6 +123,15 @@ input {
   padding: 4px 8px;
 }
 
+input:focus {
+  border: 1.08px solid;
+  box-shadow: 2px 2px 4px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
 .create-btn {
   margin: 30px 0px 10px 40px;
   width: 209px;

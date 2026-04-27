@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  color: black;
+}
+
+.signup-page {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 555px 1fr;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero-logo-card {
+  position: absolute;
+  top: 21%;
+  left: 16px;
+  right: 16px;
+  min-height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 11px;
+}
+
+.hero-logo-card img {
+  width: 97px;
+  height: 97px;
+}
+
+.hero-logo-card h1 {
+  margin: 0;
+  font-family: "Inria Serif", serif;
+  font-size: 55px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.credits {
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.credits p {
+  margin: 4px 0;
+}
+.credits a {
+  color: white;
+  text-decoration: underline;
+}
+
+.signup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f0ead7;
+}
+
+.intro {
+  padding: 40px 40px 0px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.signup-form {
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding-bottom: 30px;
+}
+
+.signup-form h2 {
+  margin: 0 0 28px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 28px 49px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #383735;
+  font-size: 10.81px;
+  font-weight: 500;
+  letter-spacing: 0.86px;
+}
+
+input {
+  height: 32px;
+  border: 1.08px solid #b0aba1;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.create-btn {
+  margin: 30px 0px 10px 40px;
+  width: 209px;
+  height: 39px;
+  border: none;
+  border-radius: 8px;
+  background: #34271b;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-text {
+  color: #383735;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 40px;
+}
+
+.login-text a {
+  color: #34271b;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .signup-page {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 420px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-logo-card h1 {
+    font-size: 38px;
+  }
+}
